@@ -7,6 +7,7 @@ const useAuth = () => {
   const [isAuthenticated, setAuthentication] = useState<boolean>(false);
 
   const navigate_to = (user: User) => {
+    setAuthentication(true);
     if (user.role == "admin") {
       navigate("/admin");
     }
