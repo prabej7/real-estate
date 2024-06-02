@@ -34,6 +34,7 @@ const Login: React.FC = () => {
     if (response.status == 200) {
       auth.navigate_to(response.data);
       setCookie("user", response.data);
+      
     }
   }
 
